@@ -1,0 +1,14 @@
+/* App.css */
+.app {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Board.css */
