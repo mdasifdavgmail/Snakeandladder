@@ -1,20 +1,22 @@
-/* App.css */
 
-  /* Board.css */
-  .board {
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px;
-    margin: 0 auto;
-  }
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 2px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+}
   
   .cell {
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+    position: relative;
+    font-size: 0.8em;
   }
   
   .player1 {
@@ -24,4 +26,13 @@
   .player2 {
     background-color: blue;
   }
+  @media (max-width: 600px) {
+    .board {
+      grid-template-columns: repeat(5, 1fr);
+    }
   
+    .cell {
+      font-size: 0.6em;
+      padding: 8px;
+    }
+  }
