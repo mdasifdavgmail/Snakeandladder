@@ -1,0 +1,9 @@
+.ladder {
+    position: absolute;
+    font-size: 1.5em;
+    color: green;
+    bottom: 10%;
+    right: 10%;
+    pointer-events: none;
+  }
+  
